@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="weather.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+            <div class="search_container">
+                <div class="input_box">
+                    <input type="text" id="input" placeholder="Enter city name">
+                </div>
+                <div class="search" onclick="weatherfun()">
+                    <img  src="weather_Images/search.png" alt="search" >
+                </div>
+            </div>
+            <div class="validcityname">Invalid City Name</div>
+            <div class="weather_box">
+                <div class="weather_logo">
+                    <img class="icon" src="weather_Images/clear.png" alt="Weather_Logo">
+                    <h1 id="temp">---</h1>
+                    <h2 id="city_name">City Name</h2>
+                </div>
+                <div class="humidity_windspeed_box">
+                <div class="humidity"style="display: flex;">
+                    <img src="weather_Images/humidity.png" alt="humidity">
+                    <div id="humidity_details">
+                        <p class="humidityvalue">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind_speed" style="display: flex;">
+                <img src="weather_Images/wind.png" alt="Wind_Speed">
+               <div id="wind_details" >
+                <p class="wind">--Km/h</p>
+                <p>Wind Speed</p>
+               </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="weather.js"></script>
+</body>
+</html>
